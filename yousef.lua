@@ -434,7 +434,7 @@ ID="InputMessageAudio",
 audio_ = GetInputFile(audio),
 duration_ = "",
 title_ = title or "",
-performer_ = "سورس أبو جبار الرسمي",
+performer_ = "سورس أبناء عائشة الرسمي",
 caption_ = caption or ""
 }},func or dl_cb,nil)
 end
@@ -1560,7 +1560,7 @@ database:del(bot_id.."yousef:Lock:Bot:kick"..msg.chat_id_)
 Reply_Status(msg,msg.sender_user_id_,"unlock","• تم فـتح البوتات")  
 return false
 end 
-if text == 'اريد بوت' or text == 'اريد مطور' or text == 'خوش سورس' or text == 'سورس أبو جبار' or text == 'اريد بوت تمبلر' or text == 'سورس أبو جبار' then
+if text == 'اريد بوت' or text == 'اريد مطور' or text == 'خوش سورس' or text == 'سورس أبناء عائشة' or text == 'اريد بوت تمبلر' or text == 'سورس أبناء عائشة' then
 Text = [[
 •- DEV @Aisha_sonمبرمج بوتات•
 ]]
@@ -1570,7 +1570,7 @@ end
 if text == 'اريد انصب بوت' or text == 'عجبني البوت' or text == 'منو منصبلك' or text == 'منو مطور السورس' or text == 'مطور السورس' or text == 'انصبلك'  or text == 'انصبلك بوت' then
 Text = [[
 اهلا عزيزي
-متوفر تنصيب بوتات ع سورس أبو جبار
+متوفر تنصيب بوتات ع سورس أبناء عائشة
 احدث واسرع البوتات وضمان الثقه
 للاستفسار راسل المطور @Aisha_son
 ]]
@@ -6509,7 +6509,7 @@ database:set(bot_id.."yousef:Left:Bot"..msg.chat_id_,true)
 send(msg.chat_id_, msg.id_, "• تم تعطيل مغادرة البوت") 
 return false 
 end
-if text == (database:get(bot_id.."yousef:Name:Bot") or "أبو جبار") then
+if text == (database:get(bot_id.."yousef:Name:Bot") or "أبناء عائشة") then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6519,13 +6519,13 @@ send(msg.chat_id_, msg.id_,'• عذࢪا عليڪ الاشتࢪاڪ في قنا
 end
 return false
 end
-Namebot = (database:get(bot_id.."yousef:Name:Bot") or "أبو جبار")
+Namebot = (database:get(bot_id.."yousef:Name:Bot") or "أبناء عائشة")
 local namebot = {
 "أقولك روم نام .. انا مشغول  .. ",
 " أطلب ما تريد من "..Namebot,
 " عجبك اسم  "..Namebot,
 'تحب اطردك ولا كيف ؟',
-'اروح اجبلك مطوري أبو جبار؟ ',
+'اروح اجبلك مطوري أبناء عائشة؟ ',
 'هلا عمري قول؟ ',
 "  معاك البطل  "..Namebot,
 'لا تكرر اسمي؟',
@@ -6650,7 +6650,7 @@ end
 end
 
 if text == "بوت" then
-Namebot = (database:get(bot_id.."yousef:Name:Bot") or "أبو جبار")
+Namebot = (database:get(bot_id.."yousef:Name:Bot") or "أبناء عائشة")
 send(msg.chat_id_, msg.id_,"اسمي ["..Namebot.."] 🇸🇦 ") 
 end
 if text == "تغير اسم البوت" or text == "تغيير اسم البوت" or text == "حذف اسم البوت" then 
@@ -10469,7 +10469,7 @@ if NewCmmd then
 data.message_.content_.text_ = (NewCmmd or data.message_.content_.text_)
 end
 end
-local Name_Bot = (database:get(bot_id.."yousef:Name:Bot") or "أبو جبار")
+local Name_Bot = (database:get(bot_id.."yousef:Name:Bot") or "أبناء عائشة")
 if not database:get(bot_id.."yousef:Fun_Bots"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
